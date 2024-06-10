@@ -1,8 +1,8 @@
 ## PRA TUBES CALON ASISTEN (CA) 2024 ICLABS FIKOM UMI (WEB)
 
-## NAMA APLIKASI :smiling_imp:
+## NAMA APLIKASI :Pendaftaran-Mahasiswa-Baru:
 > [!NOTE]
-> FULAN - 13X202XXXXX
+> Maharani Safwa Andini - 13020220292
 
 
 > [!IMPORTANT]
@@ -33,5 +33,3 @@
 
 > [!CAUTION]
 > PHP VERSION LASTES
-
-
