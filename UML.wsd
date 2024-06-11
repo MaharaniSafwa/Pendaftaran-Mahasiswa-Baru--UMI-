@@ -1,0 +1,31 @@
+@startuml
+
+left to right direction
+
+actor "Mahasiswa Baru" as MB #Purple
+actor "Admin" as A #Red
+actor "Super Admin" as SA #Blue
+
+rectangle "Website Pendaftaran Mahasiswa" {
+    MB -- (Login) #Purple
+    A -- (Login) #Red
+    SA -- (Login) #Blue
+    
+    (Login) --> (Isi Data Mahasiswa) #Purple
+    (Isi Data Mahasiswa) --> (Lihat Daftar Mahasiswa) #Purple
+    
+    (Login) --> (Kelola Data Mahasiswa) #Red
+    (Kelola Data Mahasiswa) --> (Tambah Data Mahasiswa) #Red
+    (Kelola Data Mahasiswa) --> (Perbarui Data Mahasiswa) #Red
+    (Kelola Data Mahasiswa) --> (Hapus Data Mahasiswa) #Red
+    
+    (Login) --> (Kelola Akun) #Blue
+    (Kelola Akun) --> (Tambah Admin) #Blue
+    (Kelola Akun) --> (Hapus Admin) #Blue
+    (Kelola Akun) --> (Atur Akses Admin) #Blue
+    
+    (Atur Akses Akun) --> (Tambah Admin) #Blue
+    (Atur Akses Akun) --> (Hapus Admin) #Blue
+}
+
+@enduml
